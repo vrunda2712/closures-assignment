@@ -103,3 +103,56 @@ secondIdea();
 ---> O/P: undefined
 
           decision variable has no value at declaration so function firstIdea returns nothing and secondIdea function does not have anything to return so it prints the undefined variable decision to the screen
+
+
+
+BLOCKS
+
+
+1.
+function buildHouse(address) {
+  // ... house gets built
+  return 'Building house at ' + address;
+}
+buildHouse('123 Happy St.');
+console.log(address);
+
+---> O/P: ReferenceError: address is not defined
+
+          Error because address variable is undefined but after adding var address = buildHouse('123 Happy St.'); it returns the string 'Building house at 123 Happy St.'
+
+
+2.
+var determined = false;
+if (determined) {
+  var smoothie = 'strawberry banana';
+}
+console.log(smoothie);
+
+---> O/P: undefined
+
+          returns undefined because determined variable is false at declaration but change it to true and it will allow to return smoothie name as 'strawberry banana'.
+
+
+3.
+for (var index = 0; index < 5; index++) {
+  // ...
+}
+console.log(index);
+
+---> O/P: 5
+
+          It will just print the index number at the end of loop but moving console.log inside the for loop make it printable for every index number as it running through the for loop.
+
+
+4.
+var items = ['glasses', 'toothpaste', 'wallet'];
+items.forEach(function(item) {
+  var lastItem = item;
+});
+console.log(lastItem);
+
+
+---> O/P: ReferenceError: lastItem is not defined
+
+          Error because lastItem is undefined and forEach will check for each element of array while you only want last item of array so changing forEach loop to a for loop and defines index will allows you to return the last item from array.

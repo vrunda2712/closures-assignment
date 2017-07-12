@@ -73,3 +73,33 @@ function secondIdea() {
 
 firstIdea();
 secondIdea();
+
+
+
+function buildHouse(address) {
+  return 'Building house at ' + address;
+}
+var address = buildHouse('123 Happy St.');
+console.log(address);
+
+
+
+var determined = true;
+if (determined) {
+  var smoothie = 'strawberry banana';
+}
+console.log(smoothie);
+
+
+
+for (var index = 0; index < 5; index++) {
+  console.log(index);
+}
+
+
+
+var items = ['glasses', 'toothpaste', 'wallet'];
+for(i = 0; i < items.length; i++) {
+  var lastItem = items[i];
+};
+console.log(lastItem);
