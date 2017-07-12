@@ -4,11 +4,17 @@
 // How many parameters do the outer and inner functions each need?
 
 var recipient = "Devon";
-var sendNote = getSendNoteFunction(recipient);
+
 // YOUR CODE HERE ------------------------
 
-
-
+function sendNote(note){
+  getSendNoteFunction();
+  console.log(note);
+}
+function getSendNoteFunction() {
+  var recipient = 'Devon';
+  console.log("Dear " + recipient + ",");
+}
 
 // ---------------------------------------
 
