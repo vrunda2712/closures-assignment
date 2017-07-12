@@ -5,7 +5,10 @@
 var personToVisit = "best friend";
 // YOUR CODE HERE ------------------------
 
-
+function flyTo(location){
+  var personToVisit = "best friend";
+  console.log('Enjoy your visit to ' + location + ' to visit your ' + personToVisit);
+}
 
 // ---------------------------------------
 
